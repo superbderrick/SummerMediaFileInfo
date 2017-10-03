@@ -13,6 +13,8 @@
 		490B46B11F839C45003DD20A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490B46AF1F839C45003DD20A /* Main.storyboard */; };
 		490B46B31F839C45003DD20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490B46B21F839C45003DD20A /* Assets.xcassets */; };
 		490B46B61F839C45003DD20A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490B46B41F839C45003DD20A /* LaunchScreen.storyboard */; };
+		490B46BC1F83A39B003DD20A /* SummerFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B46BB1F83A39B003DD20A /* SummerFileInfo.swift */; };
+		490B46BE1F83A46C003DD20A /* SummerFileInfoTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B46BD1F83A46C003DD20A /* SummerFileInfoTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		490B46B21F839C45003DD20A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		490B46B51F839C45003DD20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490B46B71F839C45003DD20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490B46BB1F83A39B003DD20A /* SummerFileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerFileInfo.swift; sourceTree = "<group>"; };
+		490B46BD1F83A46C003DD20A /* SummerFileInfoTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerFileInfoTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 			children = (
 				490B469D1F839C2D003DD20A /* SummerFileInfo.h */,
 				490B469E1F839C2D003DD20A /* Info.plist */,
+				490B46BB1F83A39B003DD20A /* SummerFileInfo.swift */,
+				490B46BD1F83A46C003DD20A /* SummerFileInfoTypes.swift */,
 			);
 			path = SummerFileInfo;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 				TargetAttributes = {
 					490B46991F839C2D003DD20A = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					490B46A81F839C45003DD20A = {
@@ -199,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490B46BE1F83A46C003DD20A /* SummerFileInfoTypes.swift in Sources */,
+				490B46BC1F83A39B003DD20A /* SummerFileInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +358,7 @@
 		490B46A31F839C2D003DD20A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -363,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = superbderrick.github.io.SummerFileInfo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,6 +382,7 @@
 		490B46A41F839C2D003DD20A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
