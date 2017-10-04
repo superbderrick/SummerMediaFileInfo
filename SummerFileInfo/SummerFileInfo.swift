@@ -9,10 +9,22 @@
 import Foundation
 
 open class SummerFileInfo {
-  var name: ExtractFileType
+  var fileType: ExtractFileType
   
-  init() {
-    self.name = ExtractFileType.BOTH
+  public  init() {
+    self.fileType = ExtractFileType.BOTH
+    
+    setupFileInfo()
+  }
+  
+
+  
+  fileprivate func setupFileInfo() {
+    print("Test")
+  }
+  
+  fileprivate func getFiles() {
+    
   }
  
 }

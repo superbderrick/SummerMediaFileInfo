@@ -11,8 +11,12 @@ import SummerFileInfo
 
 class ViewController: UIViewController {
 
+  var fileInfo:SummerFileInfo!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    fileInfo = SummerFileInfo()
     
     //create a SummerFileInfo
   }

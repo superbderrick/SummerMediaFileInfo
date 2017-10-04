@@ -15,7 +15,33 @@
 		490B46B61F839C45003DD20A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490B46B41F839C45003DD20A /* LaunchScreen.storyboard */; };
 		490B46BC1F83A39B003DD20A /* SummerFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B46BB1F83A39B003DD20A /* SummerFileInfo.swift */; };
 		490B46BE1F83A46C003DD20A /* SummerFileInfoTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B46BD1F83A46C003DD20A /* SummerFileInfoTypes.swift */; };
+		490B46BF1F85197A003DD20A /* SummerFileInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490B469A1F839C2D003DD20A /* SummerFileInfo.framework */; };
+		490B46C01F85197A003DD20A /* SummerFileInfo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 490B469A1F839C2D003DD20A /* SummerFileInfo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		490B46C11F85197A003DD20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490B46911F839C2D003DD20A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490B46991F839C2D003DD20A;
+			remoteInfo = SummerFileInfo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		490B46C31F85197A003DD20A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				490B46C01F85197A003DD20A /* SummerFileInfo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		490B469A1F839C2D003DD20A /* SummerFileInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SummerFileInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490B46BF1F85197A003DD20A /* SummerFileInfo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,10 +158,12 @@
 				490B46A51F839C45003DD20A /* Sources */,
 				490B46A61F839C45003DD20A /* Frameworks */,
 				490B46A71F839C45003DD20A /* Resources */,
+				490B46C31F85197A003DD20A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				490B46C21F85197A003DD20A /* PBXTargetDependency */,
 			);
 			name = SummerFileInfoDemo;
 			productName = SummerFileInfoDemo;
@@ -221,6 +250,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		490B46C21F85197A003DD20A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490B46991F839C2D003DD20A /* SummerFileInfo */;
+			targetProxy = 490B46C11F85197A003DD20A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		490B46AF1F839C45003DD20A /* Main.storyboard */ = {
@@ -405,6 +442,7 @@
 		490B46B91F839C45003DD20A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MKPJ9K6N6;
@@ -421,6 +459,7 @@
 		490B46BA1F839C45003DD20A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MKPJ9K6N6;
