@@ -1,23 +1,23 @@
 //
-//  SummerFileInfo.swift
-//  SummerFileInfo
+//  SummerMediaFileInfo.swift
+//  SummerMediaFileInfo
 //
-//  Created by Kang Jinyeoung on 03/10/2017.
+//  Created by Kang Jinyeoung on 05/10/2017.
 //  Copyright © 2017 SuperbDerrick. All rights reserved.
 //
 
 import Foundation
 
-open class SummerFileInfo {
-  var fileType: ExtractFileType
+open class SummerMediaFileInfo {
+  var fileType: ExtractMode
   
   public  init() {
-    self.fileType = ExtractFileType.BOTH
+    self.fileType = ExtractMode.Both
     
     setupFileInfo()
   }
   
-
+  
   
   fileprivate func setupFileInfo() {
     print("Test")
@@ -26,5 +26,5 @@ open class SummerFileInfo {
   fileprivate func getFiles() {
     
   }
- 
+  
 }

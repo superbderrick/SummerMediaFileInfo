@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SummerFileInfoDemo
+//  SummerMediaFileInfoDemo
 //
-//  Created by Kang Jinyeoung on 03/10/2017.
+//  Created by Kang Jinyeoung on 05/10/2017.
 //  Copyright © 2017 SuperbDerrick. All rights reserved.
 //
 

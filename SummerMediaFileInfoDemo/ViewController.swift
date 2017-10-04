@@ -1,24 +1,23 @@
 //
 //  ViewController.swift
-//  SummerFileInfoDemo
+//  SummerMediaFileInfoDemo
 //
-//  Created by Kang Jinyeoung on 03/10/2017.
+//  Created by Kang Jinyeoung on 05/10/2017.
 //  Copyright © 2017 SuperbDerrick. All rights reserved.
 //
 
 import UIKit
-import SummerFileInfo
+import SummerMediaFileInfo
 
 class ViewController: UIViewController {
-
-  var fileInfo:SummerFileInfo!
   
+  var mediaFileInfo : SummerMediaFileInfo!
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    fileInfo = SummerFileInfo()
-    
-    //create a SummerFileInfo
+    mediaFileInfo = SummerMediaFileInfo()
+    // Do any additional setup after loading the view, typically from a nib.
   }
 
   override func didReceiveMemoryWarning() {
