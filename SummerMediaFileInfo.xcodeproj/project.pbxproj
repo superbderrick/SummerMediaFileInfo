@@ -98,7 +98,7 @@
 		490B47151F855157003DD20A /* SummerMediaFileInfo */ = {
 			isa = PBXGroup;
 			children = (
-				49983ACA1F8645B300AA87D6 /* New Group */,
+				49983ACA1F8645B300AA87D6 /* Processor */,
 				49F217971F861F0E0012F080 /* Extractor */,
 				4935870D1F8611D500EBD4FF /* Option */,
 				493587061F8610A600EBD4FF /* FileType */,
@@ -157,11 +157,12 @@
 			path = SummerMediaFileInfoOptions;
 			sourceTree = "<group>";
 		};
-		49983ACA1F8645B300AA87D6 /* New Group */ = {
+		49983ACA1F8645B300AA87D6 /* Processor */ = {
 			isa = PBXGroup;
 			children = (
 				49983ACB1F8645E200AA87D6 /* SummerProcessor.swift */,
 			);
+			name = Processor;
 			path = "New Group";
 			sourceTree = "<group>";
 		};
