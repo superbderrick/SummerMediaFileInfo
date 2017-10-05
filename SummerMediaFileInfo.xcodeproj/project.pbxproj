@@ -20,6 +20,7 @@
 		4935870A1F8610E800EBD4FF /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587091F8610E800EBD4FF /* AudioFile.swift */; };
 		4935870C1F8610FA00EBD4FF /* PhotoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935870B1F8610FA00EBD4FF /* PhotoFile.swift */; };
 		4935870F1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935870E1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift */; };
+		493587121F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		493587091F8610E800EBD4FF /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
 		4935870B1F8610FA00EBD4FF /* PhotoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFile.swift; sourceTree = "<group>"; };
 		4935870E1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFileInfoCustomizable.swift; sourceTree = "<group>"; };
+		493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFIleInfoOptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		490B47231F85516C003DD20A /* SummerMediaFileInfoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				493587101F86180400EBD4FF /* SummerMediaFileInfoOptions */,
 				490B47241F85516C003DD20A /* AppDelegate.swift */,
 				490B47261F85516C003DD20A /* ViewController.swift */,
 				490B47281F85516C003DD20A /* Main.storyboard */,
@@ -128,6 +131,14 @@
 				4935870E1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift */,
 			);
 			path = Option;
+			sourceTree = "<group>";
+		};
+		493587101F86180400EBD4FF /* SummerMediaFileInfoOptions */ = {
+			isa = PBXGroup;
+			children = (
+				493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */,
+			);
+			path = SummerMediaFileInfoOptions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493587121F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift in Sources */,
 				490B47271F85516C003DD20A /* ViewController.swift in Sources */,
 				490B47251F85516C003DD20A /* AppDelegate.swift in Sources */,
 			);

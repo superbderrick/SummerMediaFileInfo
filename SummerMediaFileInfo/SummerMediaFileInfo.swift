@@ -10,9 +10,15 @@ import Foundation
 import Photos
 
 open class SummerMediaFileInfo  {
-  open var fileType: ExtractMode
+  
+  // MARK: Properties
   
   open var summerFiles: [SummerFile]?
+  
+  fileprivate var options: SummerMediaFileInfoCustomizable! {
+    didSet {
+    }
+  }
   
   
   
@@ -21,7 +27,14 @@ open class SummerMediaFileInfo  {
   
   
   public  init() {
-    self.fileType = ExtractMode.both
+    
+  }
+  
+  open func setup(_ options: SummerMediaFileInfoCustomizable) {
+    
+    print("Default Value Test extractMode \(options.extractMode)")
+    print("Default Value Test fileTypes \(options.fileType)")
+    print("Default Value Test isUnknown\(options.isBringUnknownFile)")
     
     setupFileInfo()
   }
@@ -51,9 +64,6 @@ open class SummerMediaFileInfo  {
      
       //for number in 0..<(numbers.count-1)
     }
-    
-    
-
   }
   
   fileprivate func getFiles() {
