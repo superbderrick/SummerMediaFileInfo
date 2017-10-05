@@ -11,7 +11,6 @@ import Foundation
 open class SummerFile {
   var fileName:String = "unname"
   var fileFormat:String = "unname"
-  
   var filePath:String = "unname"
   var fileSize:String = "unname"
   var thumbnailPath:String = "unname"

@@ -17,6 +17,9 @@
 		490B47371F8551A7003DD20A /* SummerMediaFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B47361F8551A7003DD20A /* SummerMediaFileInfo.swift */; };
 		490B47391F8551F0003DD20A /* SummerMediaFileInfoTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B47381F8551F0003DD20A /* SummerMediaFileInfoTypes.swift */; };
 		490F25CE1F85F99D00298DC5 /* SummerFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F25CD1F85F99D00298DC5 /* SummerFile.swift */; };
+		493587081F8610DA00EBD4FF /* VideoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587071F8610DA00EBD4FF /* VideoFile.swift */; };
+		4935870A1F8610E800EBD4FF /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587091F8610E800EBD4FF /* AudioFile.swift */; };
+		4935870C1F8610FA00EBD4FF /* PhotoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935870B1F8610FA00EBD4FF /* PhotoFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		490B47361F8551A7003DD20A /* SummerMediaFileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFileInfo.swift; sourceTree = "<group>"; };
 		490B47381F8551F0003DD20A /* SummerMediaFileInfoTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFileInfoTypes.swift; sourceTree = "<group>"; };
 		490F25CD1F85F99D00298DC5 /* SummerFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerFile.swift; sourceTree = "<group>"; };
+		493587071F8610DA00EBD4FF /* VideoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFile.swift; sourceTree = "<group>"; };
+		493587091F8610E800EBD4FF /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		4935870B1F8610FA00EBD4FF /* PhotoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +82,12 @@
 		490B47151F855157003DD20A /* SummerMediaFileInfo */ = {
 			isa = PBXGroup;
 			children = (
+				4935870D1F8611D500EBD4FF /* Option */,
+				493587061F8610A600EBD4FF /* FileType */,
 				490B47161F855157003DD20A /* SummerMediaFileInfo.h */,
 				490B47171F855157003DD20A /* Info.plist */,
 				490B47361F8551A7003DD20A /* SummerMediaFileInfo.swift */,
 				490B47381F8551F0003DD20A /* SummerMediaFileInfoTypes.swift */,
-				490F25CD1F85F99D00298DC5 /* SummerFile.swift */,
 			);
 			path = SummerMediaFileInfo;
 			sourceTree = "<group>";
@@ -103,6 +110,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		493587061F8610A600EBD4FF /* FileType */ = {
+			isa = PBXGroup;
+			children = (
+				490F25CD1F85F99D00298DC5 /* SummerFile.swift */,
+				493587071F8610DA00EBD4FF /* VideoFile.swift */,
+				493587091F8610E800EBD4FF /* AudioFile.swift */,
+				4935870B1F8610FA00EBD4FF /* PhotoFile.swift */,
+			);
+			path = FileType;
+			sourceTree = "<group>";
+		};
+		4935870D1F8611D500EBD4FF /* Option */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Option;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4935870C1F8610FA00EBD4FF /* PhotoFile.swift in Sources */,
 				490F25CE1F85F99D00298DC5 /* SummerFile.swift in Sources */,
+				493587081F8610DA00EBD4FF /* VideoFile.swift in Sources */,
 				490B47371F8551A7003DD20A /* SummerMediaFileInfo.swift in Sources */,
 				490B47391F8551F0003DD20A /* SummerMediaFileInfoTypes.swift in Sources */,
+				4935870A1F8610E800EBD4FF /* AudioFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
