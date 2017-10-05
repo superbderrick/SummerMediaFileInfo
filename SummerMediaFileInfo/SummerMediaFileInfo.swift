@@ -15,10 +15,7 @@ open class SummerMediaFileInfo  {
   
   open var summerFiles: [SummerFile]?
   
-  fileprivate var options: SummerMediaFileInfoCustomizable! {
-    didSet {
-    }
-  }
+
   
   public  init() {
     
@@ -31,9 +28,7 @@ open class SummerMediaFileInfo  {
     extractor.getFileInfo()
   }
   
-  open func getSummerFiles() {
-    
-  }
+
   
   
  
