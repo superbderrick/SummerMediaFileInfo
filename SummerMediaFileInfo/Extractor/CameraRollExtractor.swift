@@ -18,7 +18,10 @@ class CameraRollExtractor: SummerExtractor{
     self.type = "Grass"
   }
   
-  override func setup() {
+  override func setup(fileType: FileTypes , isBringUnknownFile: Bool) {
+    print("file Type : \(fileType)")
+    print("isBringUnknownFile : \(isBringUnknownFile)")
+    
     let allPhotos: PHFetchResult<PHAsset>!
     let allPhotosOptions = PHFetchOptions()
     allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
@@ -41,7 +44,7 @@ class CameraRollExtractor: SummerExtractor{
   }
   
   override func start() {
-    print("start is called from cameraroll")
+
   }
   
 }

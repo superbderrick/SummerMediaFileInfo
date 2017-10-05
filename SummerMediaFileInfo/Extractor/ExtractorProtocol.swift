@@ -9,6 +9,6 @@
 import Foundation
 
 protocol ExtractorProtocol {
-  func setup()
+  func setup(fileType: FileTypes , isBringUnknownFile: Bool)
   func getFileInfo()
 }

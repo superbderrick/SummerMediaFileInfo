@@ -25,7 +25,7 @@ open class SummerMediaFileInfo  {
     
     let extractor = ExtractorFactory.getExtractor(extractMode: options.extractMode)
     
-    extractor.setup()
+    extractor.setup(fileType: options.fileType, isBringUnknownFile: options.isBringUnknownFile)
     extractor.start()
     
   }

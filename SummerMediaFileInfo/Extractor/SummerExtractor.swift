@@ -9,7 +9,7 @@
 import Foundation
 
 class SummerExtractor : ExtractorProtocol {
-  func setup() {
+  func setup(fileType: FileTypes , isBringUnknownFile: Bool) {
     
   }
   
