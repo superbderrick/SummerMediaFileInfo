@@ -13,3 +13,10 @@ public enum ExtractMode {
   case Itunes
   case Both
 }
+
+public enum FileTypes {
+  case Video
+  case Photo
+  case Audio
+  case All
+}
