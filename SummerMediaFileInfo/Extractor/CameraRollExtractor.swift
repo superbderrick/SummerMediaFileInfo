@@ -10,45 +10,37 @@ import Foundation
 import Photos
 
 class CameraRollExtractor: SummerExtractor{
+  
   // MARK: Properties
+  var allFiles: PHFetchResult<PHAsset>?
   
   override init() {
     super.init()
-    self.name = "Bulbasaur"
-    self.type = "Grass"
+    
     self.processor = CameraRollProcessor()
   }
   
   override func setup(fileType: FileTypes , isBringUnknownFile: Bool) {
-    print("file Type : \(fileType)")
-    print("isBringUnknownFile : \(isBringUnknownFile)")
     
-    let allPhotos: PHFetchResult<PHAsset>!
-    let allPhotosOptions = PHFetchOptions()
-    allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-    allPhotos = PHAsset.fetchAssets(with: allPhotosOptions)
-    
-    
-    print("count : \(allPhotos.count)")
-    
-    if allPhotos != nil {
-      for i in 0 ..< allPhotos.count {
-        let asset = allPhotos[i]
-        
-        let filename = asset.value(forKey: "filename") as! String
-        let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
-        print("fileName = \(filename)")
-        print("fileFormat = \(fileFormat)")
-      }
-       
-    }
+    let allFilesOptions = PHFetchOptions()
+    allFilesOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+    allFiles = PHAsset.fetchAssets(with: allFilesOptions)
+
   }
   
   override func start() {
-      self.processor.startProcessing()
-  }
-  
-  public func test() {
+    
+    if let files = self.allFiles {
+      if let cameraProcessor = self.processor as? CameraRollProcessor {
+        cameraProcessor.startProcessing(files)
+      } else {
+        print("Casting Error")
+      }
+      
+    } else {
+       print("Nothing Files")
+    }
     
   }
+  
 }

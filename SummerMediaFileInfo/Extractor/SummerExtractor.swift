@@ -8,40 +8,14 @@
 
 import Foundation
 
-class SummerExtractor : ExtractorProtocol {
+class SummerExtractor : Extractable {
   
-//  private var _processor = SummerProcessor()
-//  var processor : SummerProcessor{
-//    get{
-//      return _processor
-//    }
-//    set{
-//      _processor = newValue
-//    }
-//  }
+  var processor:SummerProcessor!
+  
+  init() {
+    
+  }
 
- var processor:SummerProcessor!
-  
-  private var _name = String()
-  var name : String{
-    get{
-      return _name
-    }
-    set{
-      _name = newValue
-    }
-  }
-  
-  private var _type = String()
-  var type : String{
-    get{
-      return _type
-    }
-    set{
-      _type = newValue
-    }
-  }
-  
   func setup(fileType: FileTypes , isBringUnknownFile: Bool) {
     
   }

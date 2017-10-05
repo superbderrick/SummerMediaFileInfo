@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Photos
 
 open class CameraRollProcessor : SummerProcessor {
   
@@ -14,7 +15,14 @@ open class CameraRollProcessor : SummerProcessor {
     
   }
   
-  func startProcessing(test:Int) {
-    
+  func startProcessing(_ files:PHFetchResult<PHAsset>) {
+      for i in 0 ..< files.count {
+        let asset = files[i]
+        
+        let filename = asset.value(forKey: "filename") as! String
+        let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
+        print("fileName = \(filename)")
+        print("fileFormat = \(fileFormat)")
+      }
   }
 }

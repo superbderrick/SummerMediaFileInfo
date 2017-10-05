@@ -12,8 +12,7 @@ import Foundation
 class ItunesExtractor: SummerExtractor{
   override init() {
     super.init()
-    self.name = "Bulbasaur"
-    self.type = "Grass"
+    
   }
   
   

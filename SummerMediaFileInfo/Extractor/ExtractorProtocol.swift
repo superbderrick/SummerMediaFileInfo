@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ExtractorProtocol {
+protocol Extractable {
   func setup(fileType: FileTypes , isBringUnknownFile: Bool)
   func getFileInfo()
 }
