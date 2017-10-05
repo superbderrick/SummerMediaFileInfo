@@ -31,6 +31,10 @@ open class SummerMediaFileInfo  {
     extractor.getFileInfo()
   }
   
+  open func getSummerFiles() {
+    
+  }
+  
   
  
   

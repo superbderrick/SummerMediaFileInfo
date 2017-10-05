@@ -9,21 +9,11 @@
 import Foundation
 import Photos
 
-struct CameraRollExtractor: ExtractorProtocol{
-  
+class CameraRollExtractor: ExtractorProtocol{
   // MARK: Properties
   fileprivate var allPhotos: PHFetchResult<PHAsset>!
   
   func getFileInfo() {
-    print(" getFileInfos from CameraRoll")
-  }
-  
-  func setup() {
-   print(" getFileInfos from setup")
-  }
-  
-  mutating func getFileInfos() {
-    
     let allPhotosOptions = PHFetchOptions()
     allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
     self.allPhotos = PHAsset.fetchAssets(with: allPhotosOptions)
@@ -38,11 +28,27 @@ struct CameraRollExtractor: ExtractorProtocol{
         let filename = asset.value(forKey: "filename") as! String
         let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
         print("fileName = \(filename)")
-        print("fileFormat = \(fileFormat)")  
+        print("fileFormat = \(fileFormat)")
       }
       
     }
-   
+    
+  }
+  
+ 
+  
+  
+  
+  
+ 
+  
+  func setup() {
+   print(" getFileInfos from setup")
+  }
+  
+   func getFileInfos() {
+    
+    
   }
   
   
