@@ -16,6 +16,7 @@
 		490B47351F855184003DD20A /* SummerMediaFileInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490B47131F855157003DD20A /* SummerMediaFileInfo.framework */; };
 		490B47371F8551A7003DD20A /* SummerMediaFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B47361F8551A7003DD20A /* SummerMediaFileInfo.swift */; };
 		490B47391F8551F0003DD20A /* SummerMediaFileInfoTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B47381F8551F0003DD20A /* SummerMediaFileInfoTypes.swift */; };
+		490F25CE1F85F99D00298DC5 /* SummerFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F25CD1F85F99D00298DC5 /* SummerFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		490B47301F85516C003DD20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		490B47361F8551A7003DD20A /* SummerMediaFileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFileInfo.swift; sourceTree = "<group>"; };
 		490B47381F8551F0003DD20A /* SummerMediaFileInfoTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFileInfoTypes.swift; sourceTree = "<group>"; };
+		490F25CD1F85F99D00298DC5 /* SummerFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				490B47171F855157003DD20A /* Info.plist */,
 				490B47361F8551A7003DD20A /* SummerMediaFileInfo.swift */,
 				490B47381F8551F0003DD20A /* SummerMediaFileInfoTypes.swift */,
+				490F25CD1F85F99D00298DC5 /* SummerFile.swift */,
 			);
 			path = SummerMediaFileInfo;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490F25CE1F85F99D00298DC5 /* SummerFile.swift in Sources */,
 				490B47371F8551A7003DD20A /* SummerMediaFileInfo.swift in Sources */,
 				490B47391F8551F0003DD20A /* SummerMediaFileInfoTypes.swift in Sources */,
 			);

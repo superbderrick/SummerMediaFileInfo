@@ -21,6 +21,7 @@ open class SummerMediaFileInfo {
   
   fileprivate func setupFileInfo() {
     print("Test")
+
   }
   
   fileprivate func getFiles() {
