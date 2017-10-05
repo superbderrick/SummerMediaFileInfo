@@ -21,7 +21,7 @@ open class SummerMediaFileInfo  {
   
   
   public  init() {
-    self.fileType = ExtractMode.Both
+    self.fileType = ExtractMode.both
     
     setupFileInfo()
   }
