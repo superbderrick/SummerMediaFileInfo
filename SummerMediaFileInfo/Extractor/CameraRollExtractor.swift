@@ -16,6 +16,7 @@ class CameraRollExtractor: SummerExtractor{
     super.init()
     self.name = "Bulbasaur"
     self.type = "Grass"
+    self.processor = CameraRollProcessor()
   }
   
   override func setup(fileType: FileTypes , isBringUnknownFile: Bool) {
@@ -39,12 +40,15 @@ class CameraRollExtractor: SummerExtractor{
         print("fileName = \(filename)")
         print("fileFormat = \(fileFormat)")
       }
-      
+       
     }
   }
   
   override func start() {
-
+      self.processor.startProcessing()
   }
   
+  public func test() {
+    
+  }
 }

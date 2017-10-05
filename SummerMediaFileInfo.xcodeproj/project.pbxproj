@@ -22,6 +22,8 @@
 		4935870F1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935870E1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift */; };
 		493587121F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */; };
 		49983ACE1F8648E800AA87D6 /* SummerExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */; };
+		49983AD01F86500500AA87D6 /* SummerProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983ACF1F864BD100AA87D6 /* SummerProcessor.swift */; };
+		49983AD21F86531B00AA87D6 /* CameraRollProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983AD11F86531B00AA87D6 /* CameraRollProcessor.swift */; };
 		49F217991F861F7F0012F080 /* ExtractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F217981F861F7F0012F080 /* ExtractorFactory.swift */; };
 		49F2179B1F8621680012F080 /* ExtractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2179A1F8621680012F080 /* ExtractorProtocol.swift */; };
 		49F2179D1F86222B0012F080 /* CameraRollExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2179C1F86222B0012F080 /* CameraRollExtractor.swift */; };
@@ -49,6 +51,7 @@
 		493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFIleInfoOptions.swift; sourceTree = "<group>"; };
 		49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerExtractor.swift; sourceTree = "<group>"; };
 		49983ACF1F864BD100AA87D6 /* SummerProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SummerProcessor.swift; path = SummerMediaFileInfo/Processor/SummerProcessor.swift; sourceTree = SOURCE_ROOT; };
+		49983AD11F86531B00AA87D6 /* CameraRollProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraRollProcessor.swift; path = SummerMediaFileInfo/Processor/CameraRollProcessor.swift; sourceTree = SOURCE_ROOT; };
 		49F217981F861F7F0012F080 /* ExtractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractorFactory.swift; sourceTree = "<group>"; };
 		49F2179A1F8621680012F080 /* ExtractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractorProtocol.swift; sourceTree = "<group>"; };
 		49F2179C1F86222B0012F080 /* CameraRollExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollExtractor.swift; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				49983ACF1F864BD100AA87D6 /* SummerProcessor.swift */,
+				49983AD11F86531B00AA87D6 /* CameraRollProcessor.swift */,
 			);
 			name = Processor;
 			path = "New Group";
@@ -292,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49983AD01F86500500AA87D6 /* SummerProcessor.swift in Sources */,
 				49F2179D1F86222B0012F080 /* CameraRollExtractor.swift in Sources */,
 				49F2179B1F8621680012F080 /* ExtractorProtocol.swift in Sources */,
 				4935870C1F8610FA00EBD4FF /* PhotoFile.swift in Sources */,
@@ -301,6 +306,7 @@
 				493587081F8610DA00EBD4FF /* VideoFile.swift in Sources */,
 				490B47371F8551A7003DD20A /* SummerMediaFileInfo.swift in Sources */,
 				49983ACE1F8648E800AA87D6 /* SummerExtractor.swift in Sources */,
+				49983AD21F86531B00AA87D6 /* CameraRollProcessor.swift in Sources */,
 				4935870F1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift in Sources */,
 				4935870A1F8610E800EBD4FF /* AudioFile.swift in Sources */,
 				49F217A11F8622890012F080 /* IntegrationExtractor.swift in Sources */,

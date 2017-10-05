@@ -1,5 +1,5 @@
 //
-//  SummerProcessor.swift
+//  CameraRollProcessor.swift
 //  SummerMediaFileInfo
 //
 //  Created by Kang Jinyeoung on 05/10/2017.
@@ -8,14 +8,13 @@
 
 import Foundation
 
-open class SummerProcessor {
- 
+open class CameraRollProcessor : SummerProcessor {
   
-  public  init() {
+  override public  init() {
     
   }
   
-  func startProcessing() {
-    print("startProcessing")
+  func startProcessing(test:Int) {
+    
   }
 }

@@ -25,8 +25,24 @@ open class SummerMediaFileInfo  {
     
     let extractor = ExtractorFactory.getExtractor(extractMode: options.extractMode)
     
-    extractor.setup(fileType: options.fileType, isBringUnknownFile: options.isBringUnknownFile)
-    extractor.start()
+   
+  
+    if let cameraRollExtractor = extractor as? CameraRollExtractor {
+     cameraRollExtractor.test()
+     cameraRollExtractor.setup(fileType: options.fileType, isBringUnknownFile: options.isBringUnknownFile)
+      cameraRollExtractor.start()
+    }
+    
+    
+    
+    
+//    if extractor is CameraRollExtractor {
+//      let p:CameraRollExtractor = extractor as SummerExtractor as! CameraRollExtractor
+//      p.test()
+//      p.setup(fileType: options.fileType, isBringUnknownFile: options.isBringUnknownFile)
+//      p.start()
+//    }
+    
     
   }
   

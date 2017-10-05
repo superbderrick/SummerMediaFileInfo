@@ -9,18 +9,18 @@
 import Foundation
 
 class SummerExtractor : ExtractorProtocol {
-  func setup(fileType: FileTypes , isBringUnknownFile: Bool) {
-    
-  }
   
-  func getFileInfo() {
-    
-  }
-  
-  func start() {
-    
-  }
-  
+//  private var _processor = SummerProcessor()
+//  var processor : SummerProcessor{
+//    get{
+//      return _processor
+//    }
+//    set{
+//      _processor = newValue
+//    }
+//  }
+
+ var processor:SummerProcessor!
   
   private var _name = String()
   var name : String{
@@ -40,6 +40,18 @@ class SummerExtractor : ExtractorProtocol {
     set{
       _type = newValue
     }
+  }
+  
+  func setup(fileType: FileTypes , isBringUnknownFile: Bool) {
+    
+  }
+  
+  func getFileInfo() {
+    
+  }
+  
+  func start() {
+    
   }
   
   
