@@ -20,55 +20,19 @@ open class SummerMediaFileInfo  {
     }
   }
   
-  
-  
-  // MARK: Properties
-  fileprivate var allPhotos: PHFetchResult<PHAsset>!
-  
-  
   public  init() {
     
   }
   
   open func setup(_ options: SummerMediaFileInfoCustomizable) {
     
-    print("Default Value Test extractMode \(options.extractMode)")
-    print("Default Value Test fileTypes \(options.fileType)")
-    print("Default Value Test isUnknown\(options.isBringUnknownFile)")
+    let extractor = ExtractorFactory.getExtractor(extractMode: options.extractMode)
     
-    setupFileInfo()
+    extractor.getFileInfo()
   }
   
   
-  fileprivate func setupFileInfo() {
-    print("Test")
-    
-    let allPhotosOptions = PHFetchOptions()
-    allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-    allPhotos = PHAsset.fetchAssets(with: allPhotosOptions)
-    
-    print("count : \(allPhotos.count)")
-    
-    if allPhotos != nil {
-      for i in 0 ..< allPhotos.count {
-        let asset = allPhotos[i]
-        
-        
-        let filename = asset.value(forKey: "filename") as! String
-        let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
-        print("fileName = \(filename)")
-        print("fileFormat = \(fileFormat)")
-        
-        
-      }
-     
-      //for number in 0..<(numbers.count-1)
-    }
-  }
-  
-  fileprivate func getFiles() {
-    
-  }
+ 
   
 
   

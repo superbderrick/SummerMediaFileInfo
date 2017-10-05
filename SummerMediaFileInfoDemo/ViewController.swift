@@ -15,10 +15,8 @@ class ViewController: UIViewController {
   var options: SummerMediaFileInfoCustomizable!
   
 
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     
     // Later It has to change as tablebiew Style.
     options = DefaultOption() as SummerMediaFileInfoCustomizable
