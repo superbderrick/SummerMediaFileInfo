@@ -1,5 +1,5 @@
 //
-//  ItunesExtractor.swift
+//  SummerProcessor.swift
 //  SummerMediaFileInfo
 //
 //  Created by Kang Jinyeoung on 05/10/2017.
@@ -8,13 +8,8 @@
 
 import Foundation
 
-
-class ItunesExtractor: SummerExtractor{
-  override init() {
-    super.init()
-    self.name = "Bulbasaur"
-    self.type = "Grass"
+open class SummerProcessor {
+  public  init() {
+    
   }
-  
-  
 }

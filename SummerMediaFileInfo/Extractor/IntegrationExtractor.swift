@@ -9,14 +9,13 @@
 import Foundation
 
 
-struct IntegrationExtractor: ExtractorProtocol{
-  func setup() {
-    
+class IntegrationExtractor: SummerExtractor{
+  override init() {
+    super.init()
+    self.name = "Bulbasaur"
+    self.type = "Grass"
   }
   
-  func getFileInfo() {
-    
-  }
   
   
 }

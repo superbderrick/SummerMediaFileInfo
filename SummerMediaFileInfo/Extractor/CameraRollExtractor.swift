@@ -9,21 +9,27 @@
 import Foundation
 import Photos
 
-class CameraRollExtractor: ExtractorProtocol{
+class CameraRollExtractor: SummerExtractor{
   // MARK: Properties
-  fileprivate var allPhotos: PHFetchResult<PHAsset>!
   
-  func getFileInfo() {
+  override init() {
+    super.init()
+    self.name = "Bulbasaur"
+    self.type = "Grass"
+  }
+  
+  override func setup() {
+    let allPhotos: PHFetchResult<PHAsset>!
     let allPhotosOptions = PHFetchOptions()
     allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-    self.allPhotos = PHAsset.fetchAssets(with: allPhotosOptions)
+    allPhotos = PHAsset.fetchAssets(with: allPhotosOptions)
+    
     
     print("count : \(allPhotos.count)")
     
     if allPhotos != nil {
       for i in 0 ..< allPhotos.count {
         let asset = allPhotos[i]
-        
         
         let filename = asset.value(forKey: "filename") as! String
         let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
@@ -32,24 +38,10 @@ class CameraRollExtractor: ExtractorProtocol{
       }
       
     }
-    
   }
   
- 
-  
-  
-  
-  
- 
-  
-  func setup() {
-   print(" getFileInfos from setup")
+  override func start() {
+    print("start is called from cameraroll")
   }
-  
-   func getFileInfos() {
-    
-    
-  }
-  
   
 }

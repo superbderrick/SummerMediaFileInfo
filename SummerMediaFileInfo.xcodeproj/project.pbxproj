@@ -21,6 +21,8 @@
 		4935870C1F8610FA00EBD4FF /* PhotoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935870B1F8610FA00EBD4FF /* PhotoFile.swift */; };
 		4935870F1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935870E1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift */; };
 		493587121F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */; };
+		49983ACC1F8645E200AA87D6 /* SummerProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983ACB1F8645E200AA87D6 /* SummerProcessor.swift */; };
+		49983ACE1F8648E800AA87D6 /* SummerExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */; };
 		49F217991F861F7F0012F080 /* ExtractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F217981F861F7F0012F080 /* ExtractorFactory.swift */; };
 		49F2179B1F8621680012F080 /* ExtractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2179A1F8621680012F080 /* ExtractorProtocol.swift */; };
 		49F2179D1F86222B0012F080 /* CameraRollExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2179C1F86222B0012F080 /* CameraRollExtractor.swift */; };
@@ -46,6 +48,8 @@
 		4935870B1F8610FA00EBD4FF /* PhotoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFile.swift; sourceTree = "<group>"; };
 		4935870E1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFileInfoCustomizable.swift; sourceTree = "<group>"; };
 		493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFIleInfoOptions.swift; sourceTree = "<group>"; };
+		49983ACB1F8645E200AA87D6 /* SummerProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerProcessor.swift; sourceTree = "<group>"; };
+		49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerExtractor.swift; sourceTree = "<group>"; };
 		49F217981F861F7F0012F080 /* ExtractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractorFactory.swift; sourceTree = "<group>"; };
 		49F2179A1F8621680012F080 /* ExtractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractorProtocol.swift; sourceTree = "<group>"; };
 		49F2179C1F86222B0012F080 /* CameraRollExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollExtractor.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		490B47151F855157003DD20A /* SummerMediaFileInfo */ = {
 			isa = PBXGroup;
 			children = (
+				49983ACA1F8645B300AA87D6 /* New Group */,
 				49F217971F861F0E0012F080 /* Extractor */,
 				4935870D1F8611D500EBD4FF /* Option */,
 				493587061F8610A600EBD4FF /* FileType */,
@@ -152,6 +157,14 @@
 			path = SummerMediaFileInfoOptions;
 			sourceTree = "<group>";
 		};
+		49983ACA1F8645B300AA87D6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				49983ACB1F8645E200AA87D6 /* SummerProcessor.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		49F217971F861F0E0012F080 /* Extractor */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +173,7 @@
 				49F2179C1F86222B0012F080 /* CameraRollExtractor.swift */,
 				49F2179E1F86225A0012F080 /* ItunesExtractor.swift */,
 				49F217A01F8622890012F080 /* IntegrationExtractor.swift */,
+				49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */,
 			);
 			path = Extractor;
 			sourceTree = "<group>";
@@ -283,9 +297,11 @@
 				4935870C1F8610FA00EBD4FF /* PhotoFile.swift in Sources */,
 				490F25CE1F85F99D00298DC5 /* SummerFile.swift in Sources */,
 				49F2179F1F86225A0012F080 /* ItunesExtractor.swift in Sources */,
+				49983ACC1F8645E200AA87D6 /* SummerProcessor.swift in Sources */,
 				49F217991F861F7F0012F080 /* ExtractorFactory.swift in Sources */,
 				493587081F8610DA00EBD4FF /* VideoFile.swift in Sources */,
 				490B47371F8551A7003DD20A /* SummerMediaFileInfo.swift in Sources */,
+				49983ACE1F8648E800AA87D6 /* SummerExtractor.swift in Sources */,
 				4935870F1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift in Sources */,
 				4935870A1F8610E800EBD4FF /* AudioFile.swift in Sources */,
 				49F217A11F8622890012F080 /* IntegrationExtractor.swift in Sources */,

@@ -9,7 +9,7 @@
 import Foundation
 
 struct ExtractorFactory{
-  static func getExtractor(extractMode: ExtractMode) -> ExtractorProtocol {
+  static func getExtractor(extractMode: ExtractMode) -> SummerExtractor {
     switch extractMode {
     case .cameraRoll:
       return CameraRollExtractor()
