@@ -10,19 +10,36 @@ import Foundation
 import Photos
 
 open class CameraRollProcessor : SummerProcessor {
+  fileprivate let imageManager = PHCachingImageManager()
   
   override public  init() {
     
   }
   
   func startProcessing(_ files:PHFetchResult<PHAsset>) {
-      for i in 0 ..< files.count {
+    
+    // Error
+    if files.count < 0 {
+      return
+    }
+    
+    for i in 0 ..< files.count {
         let asset = files[i]
-        
+      
         let filename = asset.value(forKey: "filename") as! String
         let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
+        let fileIdentifier = asset.value(forKey: "localIdentifier") as! String
         print("fileName = \(filename)")
         print("fileFormat = \(fileFormat)")
-      }
+        print("filelocal = \(fileIdentifier)")
+      
+  
+      
+
+
+        
+
+
+    }
   }
 }

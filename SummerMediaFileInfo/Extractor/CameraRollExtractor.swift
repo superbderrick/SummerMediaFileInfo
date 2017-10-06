@@ -22,9 +22,7 @@ class CameraRollExtractor: SummerExtractor{
   
   override func setup(fileType: FileTypes , isBringUnknownFile: Bool) {
     
-    let allFilesOptions = PHFetchOptions()
-    allFilesOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-    allFiles = PHAsset.fetchAssets(with: allFilesOptions)
+    setupInternal()
 
   }
   
@@ -40,6 +38,17 @@ class CameraRollExtractor: SummerExtractor{
     } else {
        print("Nothing Files")
     }
+    
+  }
+  
+  fileprivate func setupInternal(){
+    setupPHAsset()
+  }
+  
+  fileprivate func setupPHAsset() {
+    let allFilesOptions = PHFetchOptions()
+    allFilesOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+    allFiles = PHAsset.fetchAssets(with: allFilesOptions)
     
   }
   
