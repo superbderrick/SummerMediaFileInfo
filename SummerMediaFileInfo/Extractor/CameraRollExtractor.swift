@@ -30,7 +30,16 @@ class CameraRollExtractor: SummerExtractor{
     
     if let files = self.allFiles {
       if let cameraProcessor = self.processor as? CameraRollProcessor {
-        cameraProcessor.startProcessing(files)
+        var testValue = cameraProcessor.startProcessing(files)
+        
+        for file in testValue {
+                  print("fileName = \(file.fileName)")
+                  print("fileFormat = \(file.fileFormat)")
+                  print("filelocal = \(file.fileIdentifier)")
+                  print("fileType = \(file.mediaType)")
+        }
+        
+        
       } else {
         print("Casting Error")
       }

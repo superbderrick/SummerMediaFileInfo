@@ -16,30 +16,23 @@ open class CameraRollProcessor : SummerProcessor {
     
   }
   
-  func startProcessing(_ files:PHFetchResult<PHAsset>) {
-    
-    // Error
-    if files.count < 0 {
-      return
-    }
-    
+  func startProcessing(_ files:PHFetchResult<PHAsset>) -> [SummerFile] {
+
+    var summerFiles = [SummerFile]()
     for i in 0 ..< files.count {
         let asset = files[i]
-      
+        let mediaType = asset.mediaType      
         let filename = asset.value(forKey: "filename") as! String
         let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
         let fileIdentifier = asset.value(forKey: "localIdentifier") as! String
-        print("fileName = \(filename)")
-        print("fileFormat = \(fileFormat)")
-        print("filelocal = \(fileIdentifier)")
-      
-  
-      
-
-
         
-
+      let summerFile = SummerFile(fileName:filename , fileFormat: fileFormat,
+        fileIdentifier :fileIdentifier ,mediaType: "test")
+      summerFiles.append(summerFile)
 
     }
+      return summerFiles
+    
   }
+  
 }

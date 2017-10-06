@@ -20,8 +20,8 @@ open class SummerFile {
   
   public  init(fileName: String , fileFormat:String , fileIdentifier: String , mediaType: String) {
     self.fileName = fileName
-    self.fileFormat = fileName
-    self.fileIdentifier = fileName
+    self.fileFormat = fileFormat
+    self.fileIdentifier = fileIdentifier
     self.mediaType = mediaType
     
   }
