@@ -18,7 +18,6 @@
 		490F25CE1F85F99D00298DC5 /* SummerFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F25CD1F85F99D00298DC5 /* SummerFile.swift */; };
 		493587081F8610DA00EBD4FF /* VideoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587071F8610DA00EBD4FF /* VideoFile.swift */; };
 		4935870A1F8610E800EBD4FF /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587091F8610E800EBD4FF /* AudioFile.swift */; };
-		4935870C1F8610FA00EBD4FF /* PhotoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935870B1F8610FA00EBD4FF /* PhotoFile.swift */; };
 		4935870F1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935870E1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift */; };
 		493587121F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */; };
 		49983ACE1F8648E800AA87D6 /* SummerExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */; };
@@ -71,7 +70,6 @@
 		490F25CD1F85F99D00298DC5 /* SummerFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerFile.swift; sourceTree = "<group>"; };
 		493587071F8610DA00EBD4FF /* VideoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFile.swift; sourceTree = "<group>"; };
 		493587091F8610E800EBD4FF /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
-		4935870B1F8610FA00EBD4FF /* PhotoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFile.swift; sourceTree = "<group>"; };
 		4935870E1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFileInfoCustomizable.swift; sourceTree = "<group>"; };
 		493587111F86184000EBD4FF /* SummerMediaFIleInfoOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerMediaFIleInfoOptions.swift; sourceTree = "<group>"; };
 		49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerExtractor.swift; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 				490F25CD1F85F99D00298DC5 /* SummerFile.swift */,
 				493587071F8610DA00EBD4FF /* VideoFile.swift */,
 				493587091F8610E800EBD4FF /* AudioFile.swift */,
-				4935870B1F8610FA00EBD4FF /* PhotoFile.swift */,
 			);
 			path = FileType;
 			sourceTree = "<group>";
@@ -326,7 +323,6 @@
 				49983AD01F86500500AA87D6 /* SummerProcessor.swift in Sources */,
 				49F2179D1F86222B0012F080 /* CameraRollExtractor.swift in Sources */,
 				49F2179B1F8621680012F080 /* ExtractorProtocol.swift in Sources */,
-				4935870C1F8610FA00EBD4FF /* PhotoFile.swift in Sources */,
 				490F25CE1F85F99D00298DC5 /* SummerFile.swift in Sources */,
 				49F2179F1F86225A0012F080 /* ItunesExtractor.swift in Sources */,
 				49F217991F861F7F0012F080 /* ExtractorFactory.swift in Sources */,

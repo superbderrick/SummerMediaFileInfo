@@ -22,7 +22,6 @@ public enum ExtractMode {
 
 public enum FileTypes {
   case video
-  case photo
   case audio
   case all
 }
