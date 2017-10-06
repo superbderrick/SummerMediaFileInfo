@@ -27,7 +27,7 @@ open class CameraRollProcessor : SummerProcessor {
         let filename = asset.value(forKey: "filename") as! String
         let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
         let fileIdentifier = asset.value(forKey: "localIdentifier") as! String
-      
+
       
       let summerFile = SummerFile(fileName:filename , fileFormat: fileFormat,
         fileIdentifier :fileIdentifier ,mediaType:mediaType)
