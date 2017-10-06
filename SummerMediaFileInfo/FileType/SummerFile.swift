@@ -15,10 +15,6 @@ open class SummerFile {
   var fileIdentifier:String = "unKnown"
   var mediaType: MediaType = MediaType.unknown
   
-  //temp
-//  var fileSize:String = "unKnown"
-//  var thumbnailPath:String = "unKnown"
-  
   public  init(fileName: String , fileFormat:String , fileIdentifier: String , mediaType: MediaType) {
     self.fileName = fileName
     self.fileFormat = fileFormat
@@ -26,15 +22,12 @@ open class SummerFile {
     self.mediaType = mediaType
     
   }
-  
     
 }
 
 public enum MediaType : Int {
   
   case unknown
-  
-  case image
   
   case video
   
