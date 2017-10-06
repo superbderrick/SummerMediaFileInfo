@@ -22,7 +22,6 @@ open class CameraRollProcessor : SummerProcessor {
     for i in 0 ..< files.count {
         let asset = files[i]
       
-      
         let mediaType: MediaType = MediaType(rawValue: asset.mediaType.rawValue)!
         let filename = asset.value(forKey: "filename") as! String
         let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
