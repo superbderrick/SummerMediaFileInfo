@@ -30,7 +30,7 @@ class CameraRollExtractor: SummerExtractor{
     
     if let files = self.allFiles {
       if let cameraProcessor = self.processor as? CameraRollProcessor {
-        var testValue = cameraProcessor.startProcessing(files)
+        let testValue = cameraProcessor.startProcessing(files)
         
         for file in testValue {
                   print("fileName = \(file.fileName)")

@@ -8,17 +8,18 @@
 
 import Foundation
 
+
 open class SummerFile {
   var fileName:String = "unname"
   var fileFormat:String = "unKnown"
   var fileIdentifier:String = "unKnown"
-  var mediaType:String = "unKnown"
+  var mediaType: MediaType = MediaType.unknown
   
   //temp
 //  var fileSize:String = "unKnown"
 //  var thumbnailPath:String = "unKnown"
   
-  public  init(fileName: String , fileFormat:String , fileIdentifier: String , mediaType: String) {
+  public  init(fileName: String , fileFormat:String , fileIdentifier: String , mediaType: MediaType) {
     self.fileName = fileName
     self.fileFormat = fileFormat
     self.fileIdentifier = fileIdentifier
@@ -28,3 +29,15 @@ open class SummerFile {
   
     
 }
+
+public enum MediaType : Int {
+  
+  case unknown
+  
+  case image
+  
+  case video
+  
+  case audio
+}
+

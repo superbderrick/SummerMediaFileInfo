@@ -21,13 +21,16 @@ open class CameraRollProcessor : SummerProcessor {
     var summerFiles = [SummerFile]()
     for i in 0 ..< files.count {
         let asset = files[i]
-        let mediaType = asset.mediaType      
+      
+      
+        let mediaType: MediaType = MediaType(rawValue: asset.mediaType.rawValue)!
         let filename = asset.value(forKey: "filename") as! String
         let fileFormat = asset.value(forKey: "uniformTypeIdentifier") as! String
         let fileIdentifier = asset.value(forKey: "localIdentifier") as! String
-        
+      
+      
       let summerFile = SummerFile(fileName:filename , fileFormat: fileFormat,
-        fileIdentifier :fileIdentifier ,mediaType: "test")
+        fileIdentifier :fileIdentifier ,mediaType:mediaType)
       summerFiles.append(summerFile)
 
     }
