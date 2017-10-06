@@ -24,12 +24,37 @@
 		49983ACE1F8648E800AA87D6 /* SummerExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */; };
 		49983AD01F86500500AA87D6 /* SummerProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983ACF1F864BD100AA87D6 /* SummerProcessor.swift */; };
 		49983AD21F86531B00AA87D6 /* CameraRollProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983AD11F86531B00AA87D6 /* CameraRollProcessor.swift */; };
+		49983AD41F873EE200AA87D6 /* SummerMediaFileInfo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 490B47131F855157003DD20A /* SummerMediaFileInfo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49F217991F861F7F0012F080 /* ExtractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F217981F861F7F0012F080 /* ExtractorFactory.swift */; };
 		49F2179B1F8621680012F080 /* ExtractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2179A1F8621680012F080 /* ExtractorProtocol.swift */; };
 		49F2179D1F86222B0012F080 /* CameraRollExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2179C1F86222B0012F080 /* CameraRollExtractor.swift */; };
 		49F2179F1F86225A0012F080 /* ItunesExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2179E1F86225A0012F080 /* ItunesExtractor.swift */; };
 		49F217A11F8622890012F080 /* IntegrationExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F217A01F8622890012F080 /* IntegrationExtractor.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49983AD51F873EE200AA87D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490B470A1F855157003DD20A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490B47121F855157003DD20A;
+			remoteInfo = SummerMediaFileInfo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49983AD71F873EE300AA87D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49983AD41F873EE200AA87D6 /* SummerMediaFileInfo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		490B47131F855157003DD20A /* SummerMediaFileInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SummerMediaFileInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,10 +246,12 @@
 				490B471E1F85516C003DD20A /* Sources */,
 				490B471F1F85516C003DD20A /* Frameworks */,
 				490B47201F85516C003DD20A /* Resources */,
+				49983AD71F873EE300AA87D6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				49983AD61F873EE200AA87D6 /* PBXTargetDependency */,
 			);
 			name = SummerMediaFileInfoDemo;
 			productName = SummerMediaFileInfoDemo;
@@ -324,6 +351,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49983AD61F873EE200AA87D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490B47121F855157003DD20A /* SummerMediaFileInfo */;
+			targetProxy = 49983AD51F873EE200AA87D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		490B47281F85516C003DD20A /* Main.storyboard */ = {
@@ -508,10 +543,12 @@
 		490B47321F85516C003DD20A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MKPJ9K6N6;
 				INFOPLIST_FILE = SummerMediaFileInfoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superbderrick.github.io.SummerMediaFileInfoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,10 +560,12 @@
 		490B47331F85516C003DD20A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MKPJ9K6N6;
 				INFOPLIST_FILE = SummerMediaFileInfoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superbderrick.github.io.SummerMediaFileInfoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
