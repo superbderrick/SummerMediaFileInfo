@@ -16,5 +16,14 @@ open class VideoFile :SummerFile {
     super.init(fileName: fileName, fileFormat: fileFormat, fileIdentifier: fileIdentifier, mediaType: mediaType)
   }
   
-  
+  init(fileName: String, fileFormat: String, fileIdentifier: String, mediaType: MediaType ,thumbnail:UIImage?) {
+    self.thumnailImage = thumbnail
+    super.init(fileName: fileName, fileFormat: fileFormat, fileIdentifier: fileIdentifier, mediaType: mediaType)
+  }
 }
+
+
+//class RecipeIngredien: Food {
+//  var quantity: Int init(name: String, quantity: Int)
+//{
+

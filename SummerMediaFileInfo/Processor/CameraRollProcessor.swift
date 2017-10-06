@@ -14,6 +14,8 @@ open class CameraRollProcessor : SummerProcessor {
   
   override public  init() {
     
+    
+//    test = PHImageRequestOptionsResizeMode.fast
   }
   
   func startProcessing(_ files:PHFetchResult<PHAsset>) -> [SummerFile] {
@@ -31,6 +33,10 @@ open class CameraRollProcessor : SummerProcessor {
       
       let summerFile = SummerFile(fileName:filename , fileFormat: fileFormat,
         fileIdentifier :fileIdentifier ,mediaType:mediaType)
+      
+      let videoFile = VideoFile(fileName:filename , fileFormat: fileFormat,
+                                fileIdentifier :fileIdentifier ,mediaType:mediaType ,thumbnail:UIImage())
+      
       summerFiles.append(summerFile)
 
     }
