@@ -11,8 +11,7 @@ import Foundation
 
 class ItunesExtractor: SummerExtractor{
   
-  var videoFormatRange : Array<String>!
-  var audioFormatRange : Array<String>!
+  
   var localFiles: Array<String>?
   
   
@@ -27,9 +26,7 @@ class ItunesExtractor: SummerExtractor{
     setupInternal()
     
   }
-  
-  
-  
+
   private func setupInternal(){
     setupFileManger()
   }
@@ -40,8 +37,6 @@ class ItunesExtractor: SummerExtractor{
     
     // Get Filelist.
     localFiles? = try! fileManager.contentsOfDirectory(atPath: applicationDocumentsDirectory())
-    
-    
   }
   
   override func start() {
@@ -67,18 +62,14 @@ class ItunesExtractor: SummerExtractor{
   }
   
   
-  private func setupFormatRange() {
-    videoFormatRange = SupportFormats.videoFormats
-    audioFormatRange = SupportFormats.audioFormats
-    
-  }
   
   
+}
+
+extension ItunesExtractor {
   private func applicationDocumentsDirectory () -> String {
     let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
     let docsDir = dirPaths[0] as String
     return docsDir
   }
-  
-  
 }

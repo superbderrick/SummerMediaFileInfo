@@ -8,6 +8,9 @@
 
 import Foundation
 open class ItunesProcessor : SummerProcessor {
+  var videoFormatRange : Array<String>!
+  var audioFormatRange : Array<String>!
+  
   override public  init() {
     
     
@@ -39,6 +42,11 @@ open class ItunesProcessor : SummerProcessor {
     
   }
   
+  private func setupFormatRange() {
+    videoFormatRange = SupportFormats.videoFormats
+    audioFormatRange = SupportFormats.audioFormats
+    
+  }
 
   
 }
