@@ -28,7 +28,7 @@ class CameraRollExtractor: SummerExtractor{
   
   override func start() {
     
-    if let files = self.allFiles {
+    if let files = allFiles {
       if let cameraProcessor = self.processor as? CameraRollProcessor {
         let testValue = cameraProcessor.startProcessing(files)
         
