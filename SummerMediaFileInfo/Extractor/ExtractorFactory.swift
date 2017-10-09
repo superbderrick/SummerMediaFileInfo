@@ -15,8 +15,7 @@ struct ExtractorFactory{
       return CameraRollExtractor()
     case .itunes:
       return ItunesExtractor()
-    case .intergration:
-      return IntegrationExtractor()
+    
     }
   }
   

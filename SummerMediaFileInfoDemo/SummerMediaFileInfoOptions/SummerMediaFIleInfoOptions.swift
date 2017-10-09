@@ -11,7 +11,7 @@ import SummerMediaFileInfo
 
 struct DefaultOption: SummerMediaFileInfoCustomizable {
   var extractMode: ExtractMode {
-    return .cameraRoll
+    return .itunes
   }
   
   var fileType: FileTypes {
