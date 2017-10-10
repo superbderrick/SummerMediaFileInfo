@@ -19,23 +19,27 @@ open class ItunesProcessor : SummerProcessor {
   
   func startProcessing(_ files:[String]) -> [SummerFile] {
     
+    
+    
     var summerFiles = [SummerFile]()
     for i in 0 ..< files.count {
-      let asset = files[i]
+      let file = files[i]
       
+      let filename = file
+      // format parting
       let mediaType = "test"
-      let filename = "test"
+      
       let fileFormat = "test"
       let fileIdentifier = "test"
+      let testType = MediaType.unknown
       
-      
-//      let summerFile = SummerFile(fileName:filename , fileFormat: fileFormat,
-//                                  fileIdentifier :fileIdentifier ,mediaType:mediaType)
-//
+      let summerFile = SummerFile(fileName:filename , fileFormat: fileFormat,
+                                  fileIdentifier :fileIdentifier ,mediaType:testType)
+
 //      let videoFile = VideoFile(fileName:filename , fileFormat: fileFormat,
 //                                fileIdentifier :fileIdentifier ,mediaType:mediaType ,thumbnail:UIImage())
       
-     // summerFiles.append(summerFile)
+      summerFiles.append(summerFile)
       
     }
     return summerFiles
