@@ -23,6 +23,7 @@
 		49534F511F8B74F400805911 /* ItunesProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49534F501F8B74F400805911 /* ItunesProcessor.swift */; };
 		49534F551F8B76BF00805911 /* SummerProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49534F541F8B76BF00805911 /* SummerProcessor.swift */; };
 		49534F571F8B76E300805911 /* SupportFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49534F561F8B76E300805911 /* SupportFormats.swift */; };
+		497F99601F8E5762008AC7F0 /* ItunesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F995F1F8E5762008AC7F0 /* ItunesUtils.swift */; };
 		49983ACE1F8648E800AA87D6 /* SummerExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */; };
 		49983AD21F86531B00AA87D6 /* CameraRollProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49983AD11F86531B00AA87D6 /* CameraRollProcessor.swift */; };
 		49983AD41F873EE200AA87D6 /* SummerMediaFileInfo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 490B47131F855157003DD20A /* SummerMediaFileInfo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -76,6 +77,7 @@
 		49534F501F8B74F400805911 /* ItunesProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItunesProcessor.swift; path = SummerMediaFileInfo/Itunes/ItunesProcessor.swift; sourceTree = SOURCE_ROOT; };
 		49534F541F8B76BF00805911 /* SummerProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerProcessor.swift; sourceTree = "<group>"; };
 		49534F561F8B76E300805911 /* SupportFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportFormats.swift; sourceTree = "<group>"; };
+		497F995F1F8E5762008AC7F0 /* ItunesUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesUtils.swift; sourceTree = "<group>"; };
 		49983ACD1F8648E800AA87D6 /* SummerExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerExtractor.swift; sourceTree = "<group>"; };
 		49983AD11F86531B00AA87D6 /* CameraRollProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraRollProcessor.swift; path = SummerMediaFileInfo/CameraRoll/CameraRollProcessor.swift; sourceTree = SOURCE_ROOT; };
 		49F217981F861F7F0012F080 /* ExtractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractorFactory.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				49F2179E1F86225A0012F080 /* ItunesExtractor.swift */,
 				49534F501F8B74F400805911 /* ItunesProcessor.swift */,
 				49534F561F8B76E300805911 /* SupportFormats.swift */,
+				497F995F1F8E5762008AC7F0 /* ItunesUtils.swift */,
 			);
 			path = Itunes;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				490B47371F8551A7003DD20A /* SummerMediaFileInfo.swift in Sources */,
 				49983ACE1F8648E800AA87D6 /* SummerExtractor.swift in Sources */,
 				49983AD21F86531B00AA87D6 /* CameraRollProcessor.swift in Sources */,
+				497F99601F8E5762008AC7F0 /* ItunesUtils.swift in Sources */,
 				4935870F1F86128500EBD4FF /* SummerMediaFileInfoCustomizable.swift in Sources */,
 				49534F511F8B74F400805911 /* ItunesProcessor.swift in Sources */,
 				4935870A1F8610E800EBD4FF /* AudioFile.swift in Sources */,
