@@ -36,7 +36,18 @@ class ItunesExtractor: SummerExtractor{
     let fileManager = FileManager.default
     
     // Get Filelist.
-    localFiles? = try! fileManager.contentsOfDirectory(atPath: applicationDocumentsDirectory())
+    
+    do {
+      let items = try! fileManager.contentsOfDirectory(atPath: applicationDocumentsDirectory())
+      
+      if localFiles == nil {
+        localFiles = items
+      }
+    } catch {
+      print("no data")
+    }
+    
+    
   }
   
   override func start() {
