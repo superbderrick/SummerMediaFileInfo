@@ -9,18 +9,20 @@
 import Foundation
 
 public class ItunesUtils {
+ 
   
-  public static func getFileName(_ name:String) ->String {
-    var finalName = "test"
+  public static func getFileNameAndFormat(_ name:String) ->(String , String) {
     
-    return finalName
+    let fullPath = name.components(separatedBy: ".")
+    let name: String = fullPath[0]
+    let type: String = fullPath[1]
+    
+    
+    return (name,type)
   }
   
-  public static func getFileFormat(_ format:String) ->String {
-    var finalName = "test"
-    
-    return finalName
-  }
+  
+
   
   public static func getFileIdentifier(_ identifier:String) ->String {
     var finalName = "test"
@@ -29,6 +31,10 @@ public class ItunesUtils {
   }
   
   public static func getFileType(_ type:String) ->MediaType {
+    
+    let videoFormatRange = SupportFormats.videoFormats
+    let audioFormatRange = SupportFormats.audioFormats
+    
     var finalName = MediaType.unknown
     
     return finalName

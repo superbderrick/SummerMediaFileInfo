@@ -8,8 +8,6 @@
 
 import Foundation
 open class ItunesProcessor : SummerProcessor {
-  var videoFormatRange : Array<String>!
-  var audioFormatRange : Array<String>!
   
   override public  init() {
     
@@ -22,12 +20,11 @@ open class ItunesProcessor : SummerProcessor {
     for i in 0 ..< files.count {
       let file = files[i]
       
-      let filename = ItunesUtils.getFileName(file)
-      let fileFormat = ItunesUtils.getFileName(file)
+      let filePath = ItunesUtils.getFileNameAndFormat(file)
       let fileIdentifier = ItunesUtils.getFileIdentifier(file)
-      let fileType = ItunesUtils.getFileType(file)
+      let fileType = ItunesUtils.getFileType(filePath.1)
       
-      let summerFile = SummerFile(fileName:filename , fileFormat: fileFormat,
+      let summerFile = SummerFile(fileName:filePath.0 , fileFormat: filePath.1,
                                   fileIdentifier :fileIdentifier ,mediaType:fileType)
 
       summerFiles.append(summerFile)
@@ -37,11 +34,7 @@ open class ItunesProcessor : SummerProcessor {
     
   }
   
-  private func setupFormatRange() {
-    videoFormatRange = SupportFormats.videoFormats
-    audioFormatRange = SupportFormats.audioFormats
-    
-  }
+  
 
   
 }
