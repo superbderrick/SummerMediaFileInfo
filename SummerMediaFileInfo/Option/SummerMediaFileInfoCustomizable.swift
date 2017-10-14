@@ -17,7 +17,6 @@ public protocol SummerMediaFileInfoCustomizable {
 public enum ExtractMode {
   case cameraRoll
   case itunes
-  
 }
 
 public enum FileTypes {
@@ -25,3 +24,9 @@ public enum FileTypes {
   case audio
   case all
 }
+
+public enum Amount {
+  case all
+  case ten
+}
+

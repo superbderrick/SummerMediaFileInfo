@@ -11,32 +11,37 @@ import Photos
 
 open class SummerMediaFileInfo  {
   
-  // MARK: Properties
-  
-  open var summerFiles: [SummerFile]?
-  
-
-  
+  private var internalExtractor : SummerExtractor!
   public  init() {
     
   }
   
   open func setup(_ options: SummerMediaFileInfoCustomizable) {
     
-    let extractor = ExtractorFactory.getExtractor(extractMode: options.extractMode)
+    internalExtractor = ExtractorFactory.getExtractor(extractMode: options.extractMode)
     
-    extractor.setup(fileType: options.fileType, isBringUnknownFile: options.isBringUnknownFile)
-    extractor.start()
+    internalExtractor.setup(fileType: options.fileType, isBringUnknownFile: options.isBringUnknownFile)
     
-
-    
+    internalExtractor.start()
   }
   
-
   
+  
+  open  func getSummerFileInfo(completion: @escaping ([SummerFile]) -> Void) {
+
+    DispatchQueue.main.async {
+      
+      
+    }
+//    DispatchQueue.main.async {
+//      completion([SummerFile])
+//    }
+//
+//
+//
   
  
-  
+  }
 
   
 }

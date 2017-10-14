@@ -55,12 +55,12 @@ class ItunesExtractor: SummerExtractor{
       if let itunesProcessor = self.processor as? ItunesProcessor {
         let testValue = itunesProcessor.startProcessing(files)
         
-//        for file in testValue {
-//          print("fileName = \(file.fileName)")
-//          print("fileFormat = \(file.fileFormat)")
-//          print("filelocal = \(file.fileIdentifier)")
-//          print("fileType = \(file.mediaType)")
-//        }
+        for file in testValue {
+          print("fileName = \(file.fileName)")
+          print("fileFormat = \(file.fileFormat)")
+          print("filelocal = \(file.fileIdentifier)")
+          print("fileType = \(file.mediaType)")
+        }
         
         
       } else {

@@ -22,6 +22,11 @@ class ViewController: UIViewController {
     options = DefaultOption() as SummerMediaFileInfoCustomizable
     mediaFileInfo = SummerMediaFileInfo()
     mediaFileInfo.setup(options)
+    
+    mediaFileInfo.getSummerFileInfo { (summerFiles) in
+      print("test")
+    }
+    
   }
 
   override func didReceiveMemoryWarning() {

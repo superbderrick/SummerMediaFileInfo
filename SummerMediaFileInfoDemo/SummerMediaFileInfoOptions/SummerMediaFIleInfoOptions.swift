@@ -21,5 +21,9 @@ struct DefaultOption: SummerMediaFileInfoCustomizable {
   var isBringUnknownFile: Bool {
     return false
   }
+  
+  var extractAmount : Amount {
+    return .all
+  }
 
 }

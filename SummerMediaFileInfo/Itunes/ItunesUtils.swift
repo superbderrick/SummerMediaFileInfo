@@ -17,13 +17,9 @@ public class ItunesUtils {
     let name: String = fullPath[0]
     let type: String = fullPath[1]
     
-    
     return (name,type)
   }
-  
-  
 
-  
   public static func getFileIdentifier(_ identifier:String) ->String {
     var finalName = "test"
     

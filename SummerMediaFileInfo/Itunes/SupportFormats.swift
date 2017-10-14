@@ -15,6 +15,5 @@ struct SupportFormats {
   "PYV","FLV","3G2","MOV"]
   
   static let audioFormats = ["mp3","wma","flac","amr","aac","MP3","WMA","FLAC","AMR","AAC"]
- 
-  
+   
 }
