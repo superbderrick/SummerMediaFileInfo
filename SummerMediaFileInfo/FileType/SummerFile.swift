@@ -10,10 +10,10 @@ import Foundation
 
 
 open class SummerFile {
-  var fileName:String = "Unknown"
-  var fileFormat:String = "Unknown"
-  var fileIdentifier:String = "Unknown"
-  var mediaType: MediaType = MediaType.unknown
+  public var fileName:String = "Unknown"
+  public var fileFormat:String = "Unknown"
+  public var fileIdentifier:String = "Unknown"
+  public var mediaType: MediaType = MediaType.unknown
   
   public  init(fileName: String , fileFormat:String , fileIdentifier: String , mediaType: MediaType) {
     self.fileName = fileName

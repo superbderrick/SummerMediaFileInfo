@@ -50,25 +50,16 @@ class ItunesExtractor: SummerExtractor{
     
   }
   
-  override func getFiles() {
+  override  func getFiles() -> [SummerFile]? {
     if let files = localFiles {
       if let itunesProcessor = self.processor as? ItunesProcessor {
         let testValue = itunesProcessor.startProcessing(files)
-        
-        for file in testValue {
-          print("fileName = \(file.fileName)")
-          print("fileFormat = \(file.fileFormat)")
-          print("filelocal = \(file.fileIdentifier)")
-          print("fileType = \(file.mediaType)")
-        }
-        
-        
+          return testValue
       } else {
-        print("Casting Error")
+        return nil
       }
-      
     } else {
-      print("Nothing Files")
+      return nil
     }
   }
   

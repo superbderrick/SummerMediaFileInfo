@@ -28,7 +28,12 @@ open class SummerMediaFileInfo  {
   open  func getSummerFileInfo(completion: @escaping ([SummerFile]) -> Void) {
 
     DispatchQueue.main.async {
-      self.internalExtractor.getFiles()
+      if let finalFiles = self.internalExtractor.getFiles() {
+        completion(finalFiles)
+      } else {
+        print("nothing files.")
+      }
+      
     }
   }
 

@@ -24,8 +24,9 @@ class SummerExtractor : Extractable {
     
   }
   
-  func getFiles() {
-    
+  func getFiles() -> [SummerFile]? {
+   
+    return nil
   }
   
   

@@ -24,7 +24,13 @@ class ViewController: UIViewController {
     mediaFileInfo.setup(options)
     
     mediaFileInfo.getSummerFileInfo { (summerFiles) in
-     
+      
+      for file in summerFiles {
+        print(" \(file.fileName)")
+        print(" \(file.fileFormat)")
+        print(" \(file.fileIdentifier)")
+        
+      }
     }
     
   }

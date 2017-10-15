@@ -26,26 +26,19 @@ class CameraRollExtractor: SummerExtractor{
 
   }
   
-  override func getFiles() {
-    
+  override func  getFiles() -> [SummerFile]? {
     if let files = allFiles {
       if let cameraProcessor = self.processor as? CameraRollProcessor {
         let testValue = cameraProcessor.startProcessing(files)
         
-        for file in testValue {
-                  print("fileName = \(file.fileName)")
-                  print("fileFormat = \(file.fileFormat)")
-                  print("filelocal = \(file.fileIdentifier)")
-                  print("fileType = \(file.mediaType)")
-        }
-        
+        return testValue
         
       } else {
-        print("Casting Error")
+        return nil
       }
       
     } else {
-       print("Nothing Files")
+        return nil
     }
     
   }

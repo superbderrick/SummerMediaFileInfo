@@ -33,9 +33,9 @@ open class CameraRollProcessor : SummerProcessor {
       let summerFile = SummerFile(fileName:filename , fileFormat: fileFormat,
         fileIdentifier :fileIdentifier ,mediaType:mediaType)
       
-      let videoFile = VideoFile(fileName:filename , fileFormat: fileFormat,
-                                fileIdentifier :fileIdentifier ,mediaType:mediaType ,thumbnail:UIImage())
-      
+//      let videoFile = VideoFile(fileName:filename , fileFormat: fileFormat,
+//                                fileIdentifier :fileIdentifier ,mediaType:mediaType ,thumbnail:UIImage())
+//      
       summerFiles.append(summerFile)
 
     }
