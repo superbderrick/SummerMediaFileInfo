@@ -24,7 +24,7 @@ class SummerExtractor : Extractable {
     
   }
   
-  func start() {
+  func getFiles() {
     
   }
   

@@ -21,8 +21,6 @@ open class SummerMediaFileInfo  {
     internalExtractor = ExtractorFactory.getExtractor(extractMode: options.extractMode)
     
     internalExtractor.setup(fileType: options.fileType, isBringUnknownFile: options.isBringUnknownFile)
-    
-    internalExtractor.start()
   }
   
   
@@ -30,17 +28,8 @@ open class SummerMediaFileInfo  {
   open  func getSummerFileInfo(completion: @escaping ([SummerFile]) -> Void) {
 
     DispatchQueue.main.async {
-      
-      
+      self.internalExtractor.getFiles()
     }
-//    DispatchQueue.main.async {
-//      completion([SummerFile])
-//    }
-//
-//
-//
-  
- 
   }
 
   

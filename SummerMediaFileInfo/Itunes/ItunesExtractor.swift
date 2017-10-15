@@ -50,7 +50,7 @@ class ItunesExtractor: SummerExtractor{
     
   }
   
-  override func start() {
+  override func getFiles() {
     if let files = localFiles {
       if let itunesProcessor = self.processor as? ItunesProcessor {
         let testValue = itunesProcessor.startProcessing(files)

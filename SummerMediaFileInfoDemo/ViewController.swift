@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     mediaFileInfo.setup(options)
     
     mediaFileInfo.getSummerFileInfo { (summerFiles) in
-      print("test")
+     
     }
     
   }
