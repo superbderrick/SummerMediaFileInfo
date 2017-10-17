@@ -12,23 +12,23 @@ import Foundation
 open class SummerFile {
   public var fileName:String = "Unknown"
   public var fileFormat:String = "Unknown"
-  public var fileIdentifier:String = "Unknown"
+  public var fileDocumentPath:String = "Unknown"
+  
   public var mediaType: MediaType = MediaType.unknown
   
-  public  init(fileName: String , fileFormat:String , fileIdentifier: String , mediaType: MediaType) {
+  public  init(fileName: String , fileFormat:String , fileDocumentPath: String , mediaType: MediaType) {
     self.fileName = fileName
     self.fileFormat = fileFormat
-    self.fileIdentifier = fileIdentifier
+    self.fileDocumentPath = fileDocumentPath
     self.mediaType = mediaType
     
   }
   
   // sample.
   convenience init(fileName: String) {
-    
-    self.init(fileName: fileName, fileFormat: "Unknown", fileIdentifier: "Unknown", mediaType: MediaType.unknown)
+    self.init(fileName: fileName, fileFormat: "Unknown", fileDocumentPath: "Unknown", mediaType: MediaType.unknown)
   }
-    
+  
 }
 
 public enum MediaType : Int {

@@ -21,12 +21,12 @@ open class ItunesProcessor : SummerProcessor {
       let file = files[i]
       
       let filePath = ItunesUtils.getFileNameAndFormat(file)
-      let fileIdentifier = ItunesUtils.getFileIdentifier(file)
+      let fileIdentifier = ItunesUtils.getFileDocumentPath(file)
       let fileType = ItunesUtils.getFileType(filePath.1)
       
       let summerFile = SummerFile(fileName:filePath.0 , fileFormat: filePath.1,
-                                  fileIdentifier :fileIdentifier ,mediaType:fileType)
-
+                                  fileDocumentPath :fileIdentifier ,mediaType:fileType)
+      
       summerFiles.append(summerFile)
       
     }
@@ -35,3 +35,4 @@ open class ItunesProcessor : SummerProcessor {
   }
   
 }
+

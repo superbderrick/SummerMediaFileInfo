@@ -11,8 +11,9 @@ import Foundation
 open class AudioFile :SummerFile {
   
   
-  override public init(fileName: String, fileFormat: String, fileIdentifier: String,  mediaType: MediaType) {
-    super.init(fileName: fileName, fileFormat: fileFormat, fileIdentifier: fileIdentifier , mediaType: mediaType)
+  override public init(fileName: String, fileFormat: String, fileDocumentPath: String,  mediaType: MediaType) {
+    super.init(fileName: fileName, fileFormat: fileFormat, fileDocumentPath: fileDocumentPath , mediaType: mediaType)
   }
   
 }
+

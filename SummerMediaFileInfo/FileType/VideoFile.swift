@@ -7,23 +7,21 @@
 //
 
 import Foundation
+import UIKit
 
 open class VideoFile :SummerFile {
   
   var thumnailImage:UIImage?
-
-  override public init(fileName: String, fileFormat: String, fileIdentifier: String, mediaType: MediaType) {
-    super.init(fileName: fileName, fileFormat: fileFormat, fileIdentifier: fileIdentifier, mediaType: mediaType)
+  
+  override public init(fileName: String, fileFormat: String, fileDocumentPath: String, mediaType: MediaType) {
+    super.init(fileName: fileName, fileFormat: fileFormat, fileDocumentPath: fileDocumentPath, mediaType: mediaType)
   }
   
-  init(fileName: String, fileFormat: String, fileIdentifier: String, mediaType: MediaType ,thumbnail:UIImage?) {
+  init(fileName: String, fileFormat: String, fileDocumentPath: String, mediaType: MediaType ,thumbnail:UIImage?) {
     self.thumnailImage = thumbnail
-    super.init(fileName: fileName, fileFormat: fileFormat, fileIdentifier: fileIdentifier, mediaType: mediaType)
+    super.init(fileName: fileName, fileFormat: fileFormat, fileDocumentPath: fileDocumentPath, mediaType: mediaType)
   }
 }
 
 
-//class RecipeIngredien: Food {
-//  var quantity: Int init(name: String, quantity: Int)
-//{
 

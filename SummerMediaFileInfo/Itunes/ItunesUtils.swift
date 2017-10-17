@@ -9,7 +9,7 @@
 import Foundation
 
 public class ItunesUtils {
- 
+  
   
   public static func getFileNameAndFormat(_ name:String) ->(String , String) {
     
@@ -19,9 +19,13 @@ public class ItunesUtils {
     
     return (name,type)
   }
-
-  public static func getFileIdentifier(_ identifier:String) ->String {
-    var finalName = "test"
+  
+  public static func getFileDocumentPath(_ fileName:String) ->String {
+    
+    let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+    let docsDir = dirPaths[0] as String
+    
+    let finalName: String = docsDir.stringByAppendingPathComponent(fileName)
     
     return finalName
   }
@@ -37,3 +41,13 @@ public class ItunesUtils {
   }
   
 }
+
+
+
+extension String {
+  func stringByAppendingPathComponent(_ pathComponent: String) -> String {
+    return (self as NSString).appendingPathComponent(pathComponent)
+  }
+}
+
+
